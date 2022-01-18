@@ -1,6 +1,6 @@
 <?php
 
-include('./common.php'); //Linking File
+include('common.php'); //Linking File
 outputHead("Home"); // Calling Header Portion
 outputNavigation("Home"); // Calling Navigation Bar
 ?>
@@ -19,7 +19,7 @@ outputNavigation("Home"); // Calling Navigation Bar
 
 <div class="home">
 
-    <a id="explorebutton" href="../PHP/products.php">
+    <a id="explorebutton" href="products.php">
         <span></span>
         <span></span>
         <span></span>
