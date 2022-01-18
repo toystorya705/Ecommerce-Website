@@ -1,0 +1,1050 @@
+body {
+  /* Main Body background and its image*/
+  background-color: rgba(0, 247, 255, 0.568);
+  background-image: url("../IMG/img3.png");
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  /*  Navigation Bar till line 2005 */
+  margin-top: -8px;
+  margin-left: -8px;
+  background-color: rgba(50, 201, 206, 0.884);
+  width: 101.2%;
+  height: 60px;
+}
+
+.navbar ul {
+  float: left;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.navbar ul li {
+  float: left;
+  position: relative;
+  text-align: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  font-size: 18px;
+  border: 1px solid transparent;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  padding-right: 70px;
+  background-color: #fff;
+  color: #000;
+  transition: 0.6s ease;
+}
+
+.navbar ul li a ul li:hover~.navbar ul li a[target] {
+  background-color: #ffe600;
+  color: aqua;
+}
+
+.navbar ul li ul {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 20px 200px 300px 50px;
+  z-index: 100;
+}
+
+.navbar ul li:hover ul {
+  display: block;
+  transition: 0.6s ease;
+  border-radius: 4px 0px 4px 4px;
+}
+
+.navbar ul li ul li {
+  width: 140px;
+  padding: 5px;
+}
+
+.navbar ul li ul li:hover {
+  padding-right: 44px;
+}
+
+.navbar ul li ul li a {
+  display: block;
+  padding: 4px 120px;
+  padding-left: 20px;
+  color: #000;
+}
+
+.navbar ul li ul li a:hover {
+  display: block;
+  background-color: #5f5f5f9f;
+  padding: 4px 65px;
+  padding-left: 115px;
+}
+
+.navbar ul li ul #login a:hover {
+  padding: 4px 65px;
+}
+
+.navbar ul li:last-of-type ul li a:nth-last-child(1):hover {
+  padding: 4px 130px;
+  padding-left: 50px;
+}
+
+.searchbar {
+  float: right;
+  height: 40px;
+  width: 350px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  display: block;
+}
+
+#searcfield {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  height: 30px;
+  width: 290px;
+  background-color: rgb(236, 235, 235);
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 0px;
+  padding-left: 10px;
+}
+
+.magnifineicon img {
+  height: 25px;
+  width: 25px;
+  margin-top: 5px;
+  margin-right: 10px;
+  padding: 2.5px;
+  background-color: #ffe600;
+  float: right;
+}
+
+.navbar .cartimg img {
+  /* Cart Image*/
+  float: right;
+  width: 70px;
+  height: 70px;
+  margin-top: -4px;
+  margin-left: 2px;
+  padding-bottom: 20px;
+  z-index: 99;
+  position: relative;
+}
+
+.navbar .cart {
+  display: none;
+  width: 22.8%;
+  background-color: #e7ff7ac5;
+  height: 50vh;
+  position: absolute;
+  margin-top: 70px;
+  z-index: 100;
+  left: 77%;
+}
+
+.navbar .cartimg:hover+.navbar .cart {
+  display: block;
+  width: 22.8%;
+  background-color: #e7ff7ac5;
+  height: 50vh;
+}
+
+.navbar .cartimg .cart_number_div {
+  position: relative;
+  float: right;
+  margin-right: 26px;
+  z-index: 100;
+  margin-top: -15px;
+}
+
+.navbar .cartimg p {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: bolder;
+  position: absolute;
+  background-color: #ff0000;
+  z-index: 100;
+  font-family: 'Ubuntu', sans-serif;
+  border: 2px solid transparent;
+text-align: center;
+  width: 17px;
+  border-radius: 100px;
+}
+
+.navbar ::placeholder {
+  font-weight: 700;
+  color: #000;
+}
+
+.navbar .logo img {
+  /* Logo Image*/
+  float: left;
+  width: 230px;
+  height: auto;
+  margin-top: -2px;
+  z-index: 100;
+  position: relative;
+}
+
+.navbar .active {
+  background-color: #fff;
+  color: #000;
+}
+
+/*  Navigation Bar */
+
+footer {
+  /*Footer*/
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: DarkSalmon;
+  font-size: 20px;
+  text-align: center;
+  padding: 3px;
+  color: white;
+  width: 100%;
+}
+
+/*Footer*/
+
+/*Index Page till 327*/
+
+.bannerVideo video {
+  margin-left: -8px;
+  width: 1366px;
+  height: 86vh;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  position: absolute;
+  object-fit: cover;
+}
+
+.home {
+  display: flex;
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  border-radius: 0px;
+  background: #006bc933;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home a {
+  position: relative;
+  display: inline-block;
+  padding: 9px 20px;
+  color: #00fff2;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 0px;
+}
+
+.home a:hover {
+  color: #fff;
+  background: #00fff2a9;
+  box-shadow: 0 0 10px #00fff2, 0 0 40px #00fff2, 0 0 80px #ffee00, 0 0 80px #00fff2;
+  transition-delay: 0.5s;
+}
+
+.home a span {
+  position: absolute;
+  display: block;
+  border-radius: 5px;
+}
+
+.home a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00fff2);
+}
+
+.home a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.1s;
+}
+
+.home a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #00fff2);
+}
+
+.home a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.1s;
+  transition-delay: 0.5s;
+}
+
+.home a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #00fff2);
+}
+
+.home a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.1s;
+  transition-delay: 0.25s;
+}
+
+.home a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #00fff2);
+}
+
+.home a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.1s;
+  transition-delay: 0.75s;
+}
+
+/*  Index Page */
+
+/* Login and Create Account Form CSS till line 516 */
+
+.logsinform {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(181, 182, 192, 0.7);
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.logsinform img {
+  /*User Logo*/
+  width: 50%;
+  height: 50%;
+}
+
+/*User Logo*/
+
+.logsinform input {
+  /*User Input box*/
+  display: block;
+  width: 100%;
+  padding-left: 10px;
+  height: 44px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  border: 5px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/*User Input box*/
+
+.logsinform button {
+  /* Login and Sign up button*/
+  border: 1px solid #ffe600;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  background: none;
+  padding: 5px 35px;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 10px;
+  color: #ffe600;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+/* Login and Sign up button*/
+
+.logsinform a {
+  /* Create Account Link*/
+  text-decoration: none;
+  border: 1px solid #ffe600;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  background: none;
+  padding: 10px;
+  box-sizing: content-box;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 10px;
+  color: #ffe600;
+  transition: 0.8s;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Create Account Link*/
+
+.logsinform button:hover, .logsinform a:hover {
+  /*Button Transition till line 249*/
+  color: #fff;
+  border-radius: 10px;
+}
+
+.logsinform button::before, .logsinform a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: rgb(255, 166, 0);
+  z-index: -1;
+  transition: 0.8s;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.logsinform button:hover::before, .logsinform a:hover::before {
+  height: 200%;
+}
+
+.logsinform input[type="checkbox"] {
+  /*Checkbox*/
+  padding: 0;
+  margin: 0;
+  height: 13px;
+  width: 13px;
+  cursor: pointer;
+  border-radius: 10px;
+  display: inline;
+}
+
+/*Checkbox*/
+
+.logsinform label {
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.stafflogin {
+  width: 69%;
+}
+
+.messagebox {
+  width: 300px;
+  text-align: center;
+  background: rgba(181, 182, 192, 0.884);
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  border-radius: 20px;
+  display: none;
+  color: #000;
+  padding: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* The message box is shown when the user clicks on the password field */
+
+#message {
+  width: 300px;
+  text-align: center;
+  background: rgba(181, 182, 192, 0.884);
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  border-radius: 20px;
+  display: none;
+  color: #000;
+  padding: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+
+.valid {
+  color: rgb(0, 255, 0);
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "\2714";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+
+.invalid {
+  color: rgb(236, 4, 4);
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "\2716";
+}
+
+/*Login form and Create Account Form CSS till starting from line 329*/
+
+/* Order page css till 608*/
+/* Using these for multiple pages*/
+.ordercontainer {
+  margin-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgba(49, 49, 49, 0.548);
+  font-weight: 2000;
+  font-size: 25px;
+  background-color: #ffffffc0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+  padding-bottom: 40px;
+  align-self: center;
+  text-align: center;
+}
+
+.ordercontainer h1 {
+  font-weight: 600;
+
+}
+
+.ordercontainer .order {
+  align-items: center;
+  display: flex;
+  width: 99%;
+  height: 9vh;
+  background-color: #fff;
+  margin-left: 6px;
+  margin-bottom: 25px;
+
+}
+
+.ordercontainer .order:nth-child(even) {
+  background-color: #00fff2;
+}
+
+.ordercontainer .order img {
+  width: 10%;
+}
+
+.ordercontainer .order .orderdetail {
+  margin-left: 150px;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 6vh;
+}
+
+.ordercontainer .order .orderdetail p {
+  position: sticky;
+  font-weight: 600;
+  color: rgb(109, 109, 109);
+  margin-top: 6px;
+  font-size: 20px;
+  width: 20%;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.ordercontainer .order input[type="checkbox"] {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.ordercontainer .order .selectall {
+  width: 10%;
+}
+
+.ordercontainer .order .dashbutton {
+  width: 85%;
+  height: 6vh;
+}
+
+.ordercontainer .order .dashbutton button {
+  outline: none;
+  border: none;
+  width: 20%;
+  height: 5vh;
+  color: rgba(255, 255, 255, 0.486);
+  font-size: 10px;
+  cursor: pointer;
+  margin: 2px;
+  color: rgb(255, 255, 255);
+  background-color: #00d9ff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Order page css from 518*/
+
+/*About Page till line 656*/
+
+.abouthead {
+  color: rgba(49, 49, 49, 0.548);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  font-size: 55px;
+  transform: translate(-50%, -50%);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 1000;
+}
+
+.about {
+  /*Background*/
+  margin-top: 70px;
+  background: #ffffffc0;
+  position: relative;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.about img {
+  height: 80px;
+  width: 210px;
+  float: right;
+  margin-top: 180px;
+  margin-right: 50px;
+}
+
+.about p {
+  /*Paragraph*/
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(53, 53, 53);
+  width: 1100px;
+  height: 180px;
+  text-align: left;
+  padding: 80px;
+  padding-top: 170px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*About Page*/
+
+.contactus label {
+  /*Contact Us page till line 705*/
+  /*Contactus page*/
+  font-family: 'Ubuntu', sans-serif;
+  color: rgba(49, 49, 49, 0.548);
+  font-weight: 1000;
+  font-size: 50px;
+  width: 1000px;
+  padding-top: 30px;
+  padding-bottom: 380px;
+  text-align: center;
+  background: #ffffffc0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.contactus p {
+  /*Paragraph*/
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 45px;
+  transform: translate(-50%, -50%);
+  background-color: #00ccff;
+  width: 72%;
+  border-radius: 5px;
+}
+
+.contactus .para1 {
+  display: inline;
+  top: 35%;
+  left: 50%;
+}
+
+.contactus .para2 {
+  top: 55%;
+  left: 50%;
+}
+
+.contactus .para3 {
+  top: 75%;
+  left: 50%;
+}
+
+/*Contactus page*/
+
+/*products till 780*/
+/* Using these for multiple pages*/
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.products .img1 {
+  margin-top: 30px;
+  background-color: #ffffffc0;
+  height: 76vh;
+  width: 24%;
+  margin: 5px;
+}
+
+.products .img1 img {
+  margin-top: 16px;
+  margin-left: 15px;
+  width: 90%;
+  height: 50%;
+}
+
+.displayproduct .product1 .div_edit_product_image {
+  height: 76vh;
+  width: 50%;
+}
+
+.displayproduct .product1 .div_edit_product_image img {
+  width: 100%;
+}
+
+.products .img1 p {
+  margin-top: 1px;
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.products .img1 p:last-of-type {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 795;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.products .img1 .button {
+  display: block;
+  margin-top: -15px;
+  margin-left: 7px;
+}
+
+.products .img1 .button button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin: 2px;
+  color: rgb(255, 255, 255);
+  background-color: #00d9ff;
+  width: 97%;
+  height: 8vh;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.products .img1 button:last-of-type {
+  cursor: pointer;
+  background-color: rgb(172, 172, 172);
+}
+
+/*products from 707*/
+
+/*diplay product till 978*/
+/* Using these for multiple pages*/
+.displayproduct {
+  display: flex;
+  width: 100%;
+}
+
+.displayproduct .product1 {
+  display: flex;
+  margin-top: 30px;
+  background-color: #ffffffc0;
+  height: 82vh;
+  width: 100%;
+  margin: 5px;
+}
+
+.displayproduct .product1 img {
+  margin-top: 16px;
+  margin-left: 15px;
+  width: 50%;
+  height: 80%;
+}
+
+.products .img1 .rating {
+  margin-top: -20px;
+  margin-left: 20px;
+  color: #ffe600;
+}
+
+.displayproduct .product1 .image_drop {
+  width: 45%;
+  height: 80%;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: #cccccc;
+  border: 4px dashed #009578;
+  border-radius: 10px;
+  margin-top: 16px;
+  margin-left: 15px;
+}
+
+.displayproduct .product1 .image_drop--over {
+  border-style: solid;
+}
+
+.displayproduct .product1 .drop-zone__input {
+  display: none;
+}
+
+.displayproduct .product1 .drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.displayproduct .product1 .drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+
+.displayproduct .product1 .data {
+  margin-top: 10px;
+  width: 47%;
+  height: 80vh;
+  float: right;
+}
+
+.displayproduct .product1 .data #product_heading {
+  margin-top: 1px;
+  margin-left: 20px;
+  font-size: 37px;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  color: #4b4b4b;
+  width: 90%;
+}
+
+.displayproduct .product1 .data #product_description {
+  margin-top: 100px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 90%;
+  height: 200px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #4b4b4b;
+}
+
+.displayproduct .product1 .data #detail1 {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 40px;
+  font-weight: 795;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.displayproduct .product1 .data #product_stock, #product_style, #search_keyword {
+  margin-top: 5px;
+  width: 70%;
+  margin-left: 20px;
+}
+
+.displayproduct .product1 .data #add_product_description {
+  margin-left: 20px;
+  width: 90%;
+  height: 22%;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.displayproduct .product1 .data #detail2 {
+  margin-top: 110px;
+  margin-left: 20px;
+  font-size: 18px;
+  width: 90%;
+  font-family: 'Ubuntu', sans-serif;
+  color: #4b4b4b;
+}
+
+.displayproduct .product1 .data .rating {
+  margin-top: -30px;
+  margin-left: 20px;
+  color: #ffe600;
+  position: relative;
+}
+
+.displayproduct .product1 .data .displayproduct_button {
+  margin-top: -5px;
+  margin-left: 20px;
+  position: absolute;
+  width: 45%;
+}
+
+.displayproduct .product1 .data .displayproduct_button button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin: 2px;
+  color: rgb(255, 255, 255);
+  background-color: #00d9ff;
+  width: 47%;
+  height: 8vh;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.displayproduct .product1 .data .displayproduct_button button:last-of-type {
+  cursor: pointer;
+  background-color: rgb(172, 172, 172);
+}
+
+.displayproduct .product1 .data .button {
+  margin-top: 20px;
+  margin-left: 20px;
+  position: absolute;
+  width: 45%;
+}
+
+.displayproduct .product1 .data .button button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin: 2px;
+  color: rgb(255, 255, 255);
+  background-color: #00d9ff;
+  width: 47%;
+  height: 8vh;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.displayproduct .product1 .data button:last-of-type {
+  cursor: pointer;
+  background-color: rgb(172, 172, 172);
+}
+
+/*products from 782*/
+/* info page till 1049*/
+/* Using these for multiple pages*/
+.infodiv{
+  margin-top: -70px;
+  display: flex;
+}
+
+.infodiv .checkout_page_input1 input,.infodiv .checkout_page_input2 input{
+  font-weight: 300;
+  font-size: large;
+
+}
+
+.ordercontainer .checkout_page_input1,.ordercontainer .checkout_page_input2{
+
+  height:20vh;
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 70%;
+
+}
+
+.ordercontainer .checkout_page_input1 input,.ordercontainer .checkout_page_input2 input{
+
+ margin-left: -30px;
+position: absolute;
+  height: 3vh;
+  margin-top: -50px;
+
+  
+}
+
+.ordercontainer .checkout_page_input1 p,.ordercontainer .checkout_page_input2 p{
+  margin-left: 100px;
+  font-weight: 900;
+
+  text-align: left;
+  
+}
+
+.ordercontainer .checkout_page_button #input_1 input{
+  margin-left: 100px;
+}
+
+
+.ordercontainer  .button {
+  display: flex;
+  width: 40%;
+  margin-top: 150px;
+ margin-right: 50px;
+  float: right;
+}
+
+.ordercontainer   .button button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin: 2px;
+  color: rgb(255, 255, 255);
+  background-color: #00d9ff;
+  width: 97%;
+  height: 8vh;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.ordercontainer  button:last-of-type {
+  cursor: pointer;
+  background-color: rgb(172, 172, 172);
+}
+/* info page from 979*/
