@@ -1,6 +1,6 @@
 <?php
 
-include('common.php'); //Linking File
+include('./PHP/common.php'); //Linking File
 outputHead("Home"); // Calling Header Portion
 outputNavigation("Home"); // Calling Navigation Bar
 ?>
@@ -34,7 +34,7 @@ outputNavigation("Home"); // Calling Navigation Bar
     
        </div>
 
-<script src="../JavaScript/index.js"></script>
+<!-- <script src="../JavaScript/index.js"></script> -->
 
 <?php
 outputFooter(); // Calling Footer
