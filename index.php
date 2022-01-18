@@ -19,7 +19,7 @@ outputNavigation("Home"); // Calling Navigation Bar
 
 <div class="home">
 
-    <a id="explorebutton" href="./PHP/products.php">
+    <a id="explorebutton" href="./products.php">
         <span></span>
         <span></span>
         <span></span>
