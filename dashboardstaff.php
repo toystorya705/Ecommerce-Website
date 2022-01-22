@@ -18,7 +18,7 @@ outputNavigation(""); // Calling Navigation Bar
         <p class="selectall">Select All</p>
 
         <div class="dashbutton">
-            <button type="button" onclick="window.location.href='../PHP/product_add.php'">Add Product</button>
+            <button type="button" onclick="window.location.href='product_add.php'">Add Product</button>
             <button type="button" onclick="delete_edit_product('EDIT')">Edit Product</button>
             <button type="button" onclick="delete_edit_product('DELETE')">Delete Product</button>
             <button type="button" onclick="displaydata('','SORT')">Sort</button>

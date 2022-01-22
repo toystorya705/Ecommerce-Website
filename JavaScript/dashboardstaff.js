@@ -30,7 +30,7 @@ function displaydata(data, command = '') { // this function perform multiple tas
     }
     else if (command == "SORT") {
         main_div.innerHTML = "";// removing previous data
-        main_div.innerHTML = ' <h1>Dashboard</h1><div class="order" id="action_product"> <input type="checkbox" class="useragg"  name="CheckAll" onclick="SelectAll()"><p class="selectall">Select All</p><div class="dashbutton"> <button type="button" onclick=' + "window.location.href='../PHP/product_add.php'" + '>Add Product</button> <button type="button" onclick=' + "delete_edit_product('EDIT')" + '>Edit Product</button><button type="button" onclick=' + "delete_edit_product('DELETE')" + '>Delete Product</button>   <button type="button" onclick=' + "displaydata('','SORT')" + '>Sort</button> </div> </div>';
+        main_div.innerHTML = ' <h1>Dashboard</h1><div class="order" id="action_product"> <input type="checkbox" class="useragg"  name="CheckAll" onclick="SelectAll()"><p class="selectall">Select All</p><div class="dashbutton"> <button type="button" onclick=' + "window.location.href='product_add.php'" + '>Add Product</button> <button type="button" onclick=' + "delete_edit_product('EDIT')" + '>Edit Product</button><button type="button" onclick=' + "delete_edit_product('DELETE')" + '>Delete Product</button>   <button type="button" onclick=' + "displaydata('','SORT')" + '>Sort</button> </div> </div>';
 
         data_send = JSON.stringify(command);//converting to json
 
@@ -57,7 +57,7 @@ function displaydata(data, command = '') { // this function perform multiple tas
             if (data == "Document deleted") {
                 main_div.innerHTML = "";//removing previous data
                 // adding main bar which contains tasks buttons
-                main_div.innerHTML = ' <h1>Dashboard</h1><div class="order" id="action_product"> <input type="checkbox" class="useragg"  name="CheckAll" onclick="SelectAll()"><p class="selectall">Select All</p><div class="dashbutton"> <button type="button" onclick=' + "window.location.href='../PHP/product_add.php'" + '>Add Product</button> <button type="button" onclick=' + "delete_edit_product('EDIT')" + '>Edit Product</button><button type="button" onclick=' + "delete_edit_product('DELETE')" + '>Delete Product</button>   <button type="button" onclick=' + "displaydata('','SORT')" + '>Sort</button> </div> </div>';
+                main_div.innerHTML = ' <h1>Dashboard</h1><div class="order" id="action_product"> <input type="checkbox" class="useragg"  name="CheckAll" onclick="SelectAll()"><p class="selectall">Select All</p><div class="dashbutton"> <button type="button" onclick=' + "window.location.href='product_add.php'" + '>Add Product</button> <button type="button" onclick=' + "delete_edit_product('EDIT')" + '>Edit Product</button><button type="button" onclick=' + "delete_edit_product('DELETE')" + '>Delete Product</button>   <button type="button" onclick=' + "displaydata('','SORT')" + '>Sort</button> </div> </div>';
                 displaydata();
                 document.getElementById("Result").innerHTML = "Document Deleted Successfull";
                 document.getElementById("Result").style.display = "block";
@@ -119,7 +119,7 @@ function delete_edit_product(task = "", obj) {
         else if (task = "EDIT") {// check if only one box is selected of editing
             if (delete_data.length == 1) {
                 sessionStorage.setItem("edit_product_id", delete_data[0]);// storing product id which will be extracted by edit page
-                window.location.href = ("../PHP/product_edit.php");
+                window.location.href = ("product_edit.php");
             } else {
                 document.getElementById("Result").innerHTML = "Please choose one box at a time to edit";
                 document.getElementById("Result").style.display = "block";

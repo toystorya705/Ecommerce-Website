@@ -54,7 +54,7 @@ function outputNavigation($pageName) //Navigation Function
                 '</a>' . '<ul id= dropmenu>' .
                 '<li><a onclick="customer_info_page()" style="cursor:pointer;"> Profile </a></li>'.
                 '<li><a onclick="order_page()" style="cursor:pointer;"> Orders </a></li>'  .
-                '<li  ><a id="login" href="../PHP/Login.php" >Login/SignUp</a></li>' . '</ul>' . '</li>';//Creating Dropdown Menu
+                '<li  ><a id="login" href="Login.php" >Login/SignUp</a></li>' . '</ul>' . '</li>';//Creating Dropdown Menu
         } else if ($linkNames[$x] == $linkNames[1]) { 
             echo '
             >' . $linkNames[$x]  . '</a>'

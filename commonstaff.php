@@ -48,14 +48,14 @@ function outputNavigation($pageName) //Navigation Function
             echo '
             href="' . $linkAddresses[$x] . '">' . $linkNames[$x] .
                 '</a>' . '<ul id= dropmenu>'   .
-                '<li  ><a id="login" href="../PHP/staff_login.php" >Login/SignUp</a></li>' . '</ul>' . '</li>'; //Creating Dropdown Menu
+                '<li  ><a id="login" href="staff_login.php" >Login/SignUp</a></li>' . '</ul>' . '</li>'; //Creating Dropdown Menu
         } else if ($linkNames[$x] == $linkNames[1]) {
             echo '
-           id="orderstaffbutton" href="../PHP/staff_login.php ">' . $linkNames[$x]  . '</a>' . '</li>';
+           id="orderstaffbutton" href="staff_login.php ">' . $linkNames[$x]  . '</a>' . '</li>';
         }
         else if ($linkNames[$x] == $linkNames[0])
         {
-            echo ' id="dashboardbutton" href="../PHP/staff_login.php ">' . $linkNames[$x]  . '</a>' . '</li>';
+            echo ' id="dashboardbutton" href="staff_login.php ">' . $linkNames[$x]  . '</a>' . '</li>';
         } 
         else {
             echo 'href="' . $linkAddresses[$x] . '">' . $linkNames[$x]  . '</a>' . '</li>';

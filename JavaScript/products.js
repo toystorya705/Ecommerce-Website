@@ -56,7 +56,7 @@ async function getuser() {
         let i;
         for (i = 0; i < productsobject.length; i++) {
 //display data
-            main_div.innerHTML += '<div class="img1"><img style="cursor:pointer;" onclick="take_to_productdisplay(' + productsobject[i].product_id + ')" src="../IMG/' + productsobject[i].image_name + ' "> <p>' + productsobject[i].heading + '</p>'+' <div class="rating"> <!-- Creating Rating --> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>'+ '</div><p>£' + productsobject[i].price + '</p><div class="button"> <button onclick=' + "location.href='../PHP/productdisplay.php'" + ' type="button"> BUY NOW</button> <button onclick="add_to_cart('+productsobject[i].product_id+')" type="button"> ADD TO CART</button> </div> ';
+            main_div.innerHTML += '<div class="img1"><img style="cursor:pointer;" onclick="take_to_productdisplay(' + productsobject[i].product_id + ')" src="../IMG/' + productsobject[i].image_name + ' "> <p>' + productsobject[i].heading + '</p>'+' <div class="rating"> <!-- Creating Rating --> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>'+ '</div><p>£' + productsobject[i].price + '</p><div class="button"> <button onclick=' + "location.href='productdisplay.php'" + ' type="button"> BUY NOW</button> <button onclick="add_to_cart('+productsobject[i].product_id+')" type="button"> ADD TO CART</button> </div> ';
         }
     }
 }
@@ -64,6 +64,6 @@ async function getuser() {
 function take_to_productdisplay(product_id = "") {
 
     sessionStorage.setItem("displayproduct_id", product_id);// store product id for product display page
-    window.location.href = ("../PHP/productdisplay.php");
+    window.location.href = ("productdisplay.php");
 
 }
