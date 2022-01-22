@@ -57,7 +57,7 @@ function multi_tasks(object, command = "") {
                 login.setAttribute("onclick", "staff_login.php");//Change location to login page to product page if logged out
                 login.innerHTML = "Login/Sign up";
 
-                if (window.location.href != "http://localhost/PHP/staff_login.php") {
+                if (window.location.href != "https://ecommerce-website99.herokuapp.com/staff_login.php") {
                     window.location.replace("staff_login.php");
 
                 }
