@@ -18,7 +18,9 @@ function outputHead($title) //Header Function
 
     echo '<script  src="../JavaScript/common.js"></script>
 
-    <script type="module" src="../JavaScript/save_recommendation.js"></script>';
+    <script type="module" src="../JavaScript/save_recommendation.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1460719726713266"
+     crossorigin="anonymous"></script>';
     echo '</head>';
     echo '<body>';
 }
