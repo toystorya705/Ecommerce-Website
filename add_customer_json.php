@@ -1,13 +1,11 @@
 <?php
- session_start();
-$customer = json_decode(file_get_contents('php://input'), FILTER_SANITIZE_URL);// receiving data
-    //CUSTOMER REGISTRATION DATA IN MONGODB
-
-    //Output message confirming registration
-    require __DIR__ . '../vendor/autoload.php';
-
-    //Create instance of MongoDB clients
-    $mongoClient = new MongoDB\Client(
+ //Start session management
+ session_start(); 
+//Include libraries
+require __DIR__ . '/vendor/autoload.php';
+    
+//Create instance of MongoDB client
+$mongoClient = new MongoDB\Client(
     'mongodb+srv://aryan1234:aryan1234@cluster0.eyuvc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
     //Select a database
@@ -15,6 +13,7 @@ $customer = json_decode(file_get_contents('php://input'), FILTER_SANITIZE_URL);/
 
     //Select a collection 
     $collection = $db->customers;
+    $customer = json_decode(file_get_contents('php://input'), FILTER_SANITIZE_URL);// receiving data
 
     //Add the new customer to the databasea
     $insertResult = $collection->insertOne($customer);

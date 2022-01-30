@@ -1,6 +1,6 @@
 <?php
  //Start session management
- session_start();
+ session_start(); 
 //Include libraries
 require __DIR__ . '/vendor/autoload.php';
     

@@ -125,6 +125,9 @@ function product_add() {
                 }, 1000);// Time interval for display message box
 
             }
+            else{
+                console.log(data);
+            }
 
         }
 

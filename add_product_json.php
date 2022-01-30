@@ -1,6 +1,6 @@
 <?php
 $customer = json_decode(file_get_contents('php://input'), FILTER_SANITIZE_URL);
-    require __DIR__ . '../vendor/autoload.php';
+    require __DIR__ . '/vendor/autoload.php';
 
     //Create instance of MongoDB clients
     $mongoClient = new MongoDB\Client(
