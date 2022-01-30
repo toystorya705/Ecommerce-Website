@@ -12,7 +12,7 @@ body {
   margin-top: -8px;
   margin-left: -8px;
   background-color: rgba(50, 201, 206, 0.884);
-  width: 101.2%;
+  width: 101.15%;
   height: 60px;
 }
 
@@ -214,7 +214,7 @@ footer {
   text-align: center;
   padding: 3px;
   color: white;
-  width: 100%;
+  width: 99.7%;
 }
 
 /*Footer*/
@@ -223,8 +223,8 @@ footer {
 
 .bannerVideo video {
   margin-left: -8px;
-  width: 1366px;
-  height: 86vh;
+  width: 100%;
+  height: 86.5vh;
   display: flex;
   background-size: cover;
   justify-content: center;
