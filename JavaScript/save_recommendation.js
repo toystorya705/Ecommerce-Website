@@ -34,7 +34,7 @@ function search() {
 
 //Display the recommendation in the document
 function showRecommendation(search_text) {// only call when user is logged in
-    if(window.location.href=="http://localhost/PHP/index.php"&&recommender_user.getTopKeywordUser()!=null&&recommender.getTopKeyword()){
+    if(window.location.href=="https://ecommerce-website99.herokuapp.com/"||window.location.href=="https://ecommerce-website99.herokuapp.com/index.php"&&recommender_user.getTopKeywordUser()!=null&&recommender.getTopKeyword()){
         if(sessionStorage.getItem("session_status")==999){
     search_recom(recommender_user.getTopKeywordUser());
         }else{

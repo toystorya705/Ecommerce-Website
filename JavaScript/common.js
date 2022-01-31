@@ -34,7 +34,7 @@ function cart_click() {
 
 function product_search(data) {//This function is being called from recommender page, searching data function first check the status and then replace location to products page
 
-  if (window.location.href != "http://localhost/PHP/products.php") {
+  if (window.location.href != "https://ecommerce-website99.herokuapp.com/products.php") {
     sessionStorage.setItem("search_data", data);// storeing search term inside session storage
     window.location.href = "products.php";
   } else {
