@@ -39,7 +39,7 @@ function checkUser() {  //Login function
             if (result == 0) {// checking password
                 document.getElementById("Result").innerHTML = "<b>Login successful.</b>";
                 document.getElementById("Result").style.display = "block";
-                window.location.replace("index.php");
+  location.replace("index.php");
             }
 
             else if (result == "Password incorrect.") {// If password is Incorrect
