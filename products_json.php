@@ -5,8 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 //Create instance of MongoDB client
 $mongoClient = new MongoDB\Client(
-    'mongodb+srv://aryan1234:aryan1234@cluster0.eyuvc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
-
+    'mongodb+srv://aryan1234:aryan1234@cluster0.eyuvc.mongodb.net/?retryWrites=true&w=majority');
 //Select a database
 $db = $mongoClient->ecommerce;
 
